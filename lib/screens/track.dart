@@ -55,7 +55,7 @@ class _TrackingVanState extends State<TrackingVan> {
                     SizedBox(height: 45,),
                     Text("Current Location"),
                     SizedBox(height: 40,),
-                    Text("Your Location"),
+                    Text("My Location"),
                   ],
                 )
               ],
@@ -63,7 +63,7 @@ class _TrackingVanState extends State<TrackingVan> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Vehicle Number : MH-01-XX-0000",style: TextStyle(fontWeight: FontWeight.bold),),
+                Text("Vehicle Number : MH-01-XX-0010",style: TextStyle(fontWeight: FontWeight.bold),),
                 Text("Nearest Landmark : D-mart",style: TextStyle(fontWeight: FontWeight.bold),),
                 Text("ETA : 10mins",style: TextStyle(fontWeight: FontWeight.bold),),
               ],
