@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           title: 'Wastinnova',
           theme: ThemeData(
             // primarySwatch: Color(0xFF37B943),
+            primaryColor: Color(0xFF37B943),
             appBarTheme: AppBarTheme(color: Color(0xFF37B943)),
           ),
           // initialRoute: 'home',

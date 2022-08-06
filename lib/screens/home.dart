@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:svg_icon/svg_icon.dart';
 import 'package:wastinnova/components/navbutton.dart';
 
 class Home extends StatelessWidget {
@@ -36,6 +35,7 @@ class Home extends StatelessWidget {
                   children: [
                     NavButton('Track Van','tracking',Icons.location_on),
                     NavButton("Dump waste",'dumpwaste',Icons.delete_sweep_sharp),
+                    NavButton("Market",'market',Icons.shopping_cart),
                   ],
                 ),
                 Row(
