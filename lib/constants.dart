@@ -9,3 +9,4 @@ const kheaderstyle= TextStyle(
                     fontWeight:FontWeight.bold,
                     color: Colors.black87,
                   );
+const primaryColor= Color(0xFF37B943);
