@@ -34,10 +34,10 @@ dependencies:
   firebase_storage: ^10.2.17
   flutter:
     sdk: flutter
-  provider: ^6.0.3
-  # svg_icon: ^0.0.1
-  syncfusion_flutter_charts: ^20.2.40
   flutter_svg: ^1.1.0
+  provider: ^6.0.3
+  syncfusion_flutter_charts: ^20.2.40
+  url_launcher: ^6.1.5
 
 dev_dependencies:
   flutter_lints: ^2.0.0

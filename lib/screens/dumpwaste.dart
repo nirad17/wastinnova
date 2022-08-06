@@ -116,72 +116,70 @@ class _DumpWasteState extends State<DumpWaste> {
 
   Future<dynamic> AddInfoDialog(BuildContext context) {
     return showDialog(
-                    context: context,
-                    builder: (context) => Dialog(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            Text(
-                              "Enter additional info ",
-                              style: TextStyle(
-                                  fontSize: 20, color: Colors.black54),
-                            ),
-                            SizedBox(
-                              height: 25,
-                            ),
-                            TextFieldInput(
-                                hintText: "Wet waste weight",
-                                textEditingController: _wetController,
-                                textInputType: TextInputType.number),
-                            SizedBox(
-                              height: 25,
-                            ),
-                            TextFieldInput(
-                                hintText: "Dry waste weight",
-                                textEditingController: _dryController,
-                                textInputType: TextInputType.number),
-                            SizedBox(
-                              height: 25,
-                            ),
-                            ListTile(
-                              tileColor: Colors.black12,
-                              shape: StadiumBorder(),
-                              iconColor: primaryColor,
-                              leading: Icon(
-                                Icons.location_pin,
-                              ),
-                              title: Text("VIT, Katpadi"),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "Change",
-                                  style: TextStyle(
-                                      fontSize: 12, color: primaryColor),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 25,
-                            ),
-                            ElevatedButton.icon(
-                              onPressed: () {
-                                Navigator.pop(context);
-                                Navigator.pop(context);
-                              },
-                              icon: Icon(Icons.check_circle),
-                              label: Text("Submit"),
-                              style: ElevatedButton.styleFrom(
-                                padding: EdgeInsets.all(15),
-                                primary: Color(0xFF37B943),
-                                fixedSize: Size.fromWidth(150),
-                                shape: StadiumBorder(),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  );
+      context: context,
+      builder: (context) => Dialog(
+        child: Container(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Text(
+                "Enter additional info ",
+                style: TextStyle(fontSize: 20, color: Colors.black54),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              TextFieldInput(
+                  hintText: "Wet waste weight",
+                  textEditingController: _wetController,
+                  textInputType: TextInputType.number),
+              SizedBox(
+                height: 25,
+              ),
+              TextFieldInput(
+                  hintText: "Dry waste weight",
+                  textEditingController: _dryController,
+                  textInputType: TextInputType.number),
+              SizedBox(
+                height: 25,
+              ),
+              ListTile(
+                tileColor: Colors.black12,
+                shape: StadiumBorder(),
+                iconColor: primaryColor,
+                leading: Icon(
+                  Icons.location_pin,
+                ),
+                title: Text("VIT, Katpadi"),
+                trailing: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Change",
+                    style: TextStyle(fontSize: 12, color: primaryColor),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pop(context);
+                  Navigator.pop(context);
+                },
+                icon: Icon(Icons.check_circle),
+                label: Text("Submit"),
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.all(15),
+                  primary: Color(0xFF37B943),
+                  fixedSize: Size.fromWidth(150),
+                  shape: StadiumBorder(),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
