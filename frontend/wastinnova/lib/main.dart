@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
             primaryColor: Color(0xFF37B943),
             appBarTheme: AppBarTheme(color: Color(0xFF37B943)),
           ),
-          // initialRoute: 'home',
+          initialRoute: 'signup',
           home: StreamBuilder(
             stream: FirebaseAuth.instance.authStateChanges(),
             builder: (context, snapshot) {

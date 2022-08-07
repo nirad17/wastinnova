@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:syncfusion_flutter_charts/sparkcharts.dart';
-class RelStats extends StatefulWidget {
-  const RelStats({ Key? key }) : super(key: key);
 
+class MyStats extends StatefulWidget {
   @override
-  State<RelStats> createState() => _RelStatsState();
+  State<MyStats> createState() => _MyStatsState();
 }
 
-class _RelStatsState extends State<RelStats> {
+class _MyStatsState extends State<MyStats> {
   late List<WasteData> _chartData;
 
   late TooltipBehavior _tooltipBehavior;
@@ -19,12 +18,13 @@ class _RelStatsState extends State<RelStats> {
     _tooltipBehavior = TooltipBehavior(enable: true);
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SfCircularChart(
       title:
-          ChartTitle(text: 'Your contribution in Waste - 2021 \n (in Kgs)'),
+          ChartTitle(text: 'Type wise Waste - 2022 \n (in Kgs)'),
       legend:
           Legend(isVisible: true, overflowMode: LegendItemOverflowMode.wrap),
       tooltipBehavior: _tooltipBehavior,
@@ -42,8 +42,9 @@ class _RelStatsState extends State<RelStats> {
 
   List<WasteData> getChartData() {
     final List<WasteData> chartData = [
-      WasteData('You', 529),
-      WasteData('Your Locality', 9240),
+      WasteData('Wet', 160),
+      WasteData('Dry', 249),
+      WasteData('Others', 120),
     ];
     return chartData;
   }
